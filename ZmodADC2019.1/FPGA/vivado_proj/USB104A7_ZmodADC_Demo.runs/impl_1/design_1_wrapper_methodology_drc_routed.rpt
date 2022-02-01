@@ -1,0 +1,725 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Mon Jan 10 18:44:21 2022
+| Host         : DESKTOP-DH2EH4H running 64-bit major release  (build 9200)
+| Command      : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+| Design       : design_1_wrapper
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 136
++-----------+----------+------------------------------------------------------------------+------------+
+| Rule      | Severity | Description                                                      | Violations |
++-----------+----------+------------------------------------------------------------------+------------+
+| CKLD-2    | Warning  | Clock Net has IO Driver, not a Clock Buf, and/or non-Clock loads | 1          |
+| DPIR-1    | Warning  | Asynchronous driver check                                        | 52         |
+| LUTAR-1   | Warning  | LUT drives async reset alert                                     | 18         |
+| PDRC-190  | Warning  | Suboptimally placed synchronized register chain                  | 24         |
+| TIMING-9  | Warning  | Unknown CDC Logic                                                | 1          |
+| TIMING-18 | Warning  | Missing input or output delay                                    | 21         |
+| XDCB-5    | Warning  | Runtime inefficient way to find pin objects                      | 3          |
+| REQP-1959 | Advisory | connects_SERDES_RST_driver_not_FF                                | 16         |
++-----------+----------+------------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CKLD-2#1 Warning
+Clock Net has IO Driver, not a Clock Buf, and/or non-Clock loads  
+Clock net prog_clko_IBUF is directly driven by an IO rather than a Clock Buffer or may be an IO driving a mix of Clock Buffer and non-Clock loads. This connectivity should be reviewed and corrected as appropriate. Driver(s): prog_clko_IBUF_inst/O, design_1_i/prog_clko
+Related violations: <none>
+
+DPIR-1#1 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd/A[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#2 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd/A[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#3 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd/A[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#4 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd/A[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#5 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd/A[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#6 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd/A[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#7 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd/A[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#8 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd/A[17] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#9 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd/A[18] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#10 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd/A[19] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#11 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd/A[20] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#12 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd/A[21] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#13 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd/A[22] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#14 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd/A[23] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#15 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd/A[24] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#16 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd/A[25] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#17 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd/A[26] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#18 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd/A[27] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#19 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd/A[28] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#20 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd/A[29] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#21 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd/A[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#22 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd/A[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#23 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd/A[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#24 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd/A[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#25 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd/A[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#26 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh1CalibAdd/A[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#27 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd/A[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#28 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd/A[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#29 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd/A[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#30 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd/A[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#31 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd/A[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#32 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd/A[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#33 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd/A[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#34 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd/A[17] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#35 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd/A[18] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#36 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd/A[19] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#37 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd/A[20] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#38 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd/A[21] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#39 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd/A[22] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#40 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd/A[23] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#41 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd/A[24] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#42 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd/A[25] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#43 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd/A[26] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#44 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd/A[27] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#45 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd/A[28] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#46 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd/A[29] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#47 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd/A[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#48 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd/A[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#49 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd/A[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#50 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd/A[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#51 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd/A[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#52 Warning
+Asynchronous driver check  
+DSP design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd input pin design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/sCh2CalibAdd/A[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#4 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/PRE, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#5 Warning
+LUT drives async reset alert  
+LUT cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTDO_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[10]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[11]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[12]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[13]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[14]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[15]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[6]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[7]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[8]/CLR, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/iTARGET_reg[9]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#6 Warning
+LUT drives async reset alert  
+LUT cell design_1_i/AXI_DPTI_0/U0/SyncReset_AXI_LITE/SyncAsyncx/RX_fifo_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_i/AXI_DPTI_0/U0/RX_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst/arststages_ff_reg[0]/PRE, design_1_i/AXI_DPTI_0/U0/RX_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst/arststages_ff_reg[1]/PRE, design_1_i/AXI_DPTI_0/U0/RX_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/arststages_ff_reg[0]/PRE, design_1_i/AXI_DPTI_0/U0/RX_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/arststages_ff_reg[1]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#7 Warning
+LUT drives async reset alert  
+LUT cell design_1_i/AXI_DPTI_0/U0/SyncReset_AXI_LITE/SyncAsyncx/TX_fifo_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_i/AXI_DPTI_0/U0/TX_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst/arststages_ff_reg[0]/PRE, design_1_i/AXI_DPTI_0/U0/TX_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst/arststages_ff_reg[1]/PRE, design_1_i/AXI_DPTI_0/U0/TX_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/arststages_ff_reg[0]/PRE, design_1_i/AXI_DPTI_0/U0/TX_fifo/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/arststages_ff_reg[1]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#8 Warning
+LUT drives async reset alert  
+LUT cell design_1_i/AXI_DPTI_0/U0/SyncReset_SoftReset/SyncAsyncx/pCtlWr_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_i/AXI_DPTI_0/U0/AXI_S_to_DPTI_inst/aux_tkindex_reg[0]/CLR, design_1_i/AXI_DPTI_0/U0/AXI_S_to_DPTI_inst/aux_tkindex_reg[1]/CLR, design_1_i/AXI_DPTI_0/U0/AXI_S_to_DPTI_inst/pAuxTdata_reg[0]/CLR, design_1_i/AXI_DPTI_0/U0/AXI_S_to_DPTI_inst/pAuxTdata_reg[10]/CLR, design_1_i/AXI_DPTI_0/U0/AXI_S_to_DPTI_inst/pAuxTdata_reg[11]/CLR, design_1_i/AXI_DPTI_0/U0/AXI_S_to_DPTI_inst/pAuxTdata_reg[12]/CLR, design_1_i/AXI_DPTI_0/U0/AXI_S_to_DPTI_inst/pAuxTdata_reg[13]/CLR, design_1_i/AXI_DPTI_0/U0/AXI_S_to_DPTI_inst/pAuxTdata_reg[14]/CLR, design_1_i/AXI_DPTI_0/U0/AXI_S_to_DPTI_inst/pAuxTdata_reg[15]/CLR, design_1_i/AXI_DPTI_0/U0/AXI_S_to_DPTI_inst/pAuxTdata_reg[16]/CLR, design_1_i/AXI_DPTI_0/U0/AXI_S_to_DPTI_inst/pAuxTdata_reg[17]/CLR, design_1_i/AXI_DPTI_0/U0/AXI_S_to_DPTI_inst/pAuxTdata_reg[18]/CLR, design_1_i/AXI_DPTI_0/U0/AXI_S_to_DPTI_inst/pAuxTdata_reg[19]/CLR, design_1_i/AXI_DPTI_0/U0/AXI_S_to_DPTI_inst/pAuxTdata_reg[1]/CLR, design_1_i/AXI_DPTI_0/U0/AXI_S_to_DPTI_inst/pAuxTdata_reg[20]/CLR (the first 15 of 70 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#9 Warning
+LUT drives async reset alert  
+LUT cell design_1_i/AXI_DPTI_0/U0/SyncReset_SoftReset/SyncAsyncx/pLengthRxCnt[23]_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_i/AXI_DPTI_0/U0/DPTI_to_AXI_S_inst/Index_reg[0]/CLR, design_1_i/AXI_DPTI_0/U0/DPTI_to_AXI_S_inst/Index_reg[1]/CLR, design_1_i/AXI_DPTI_0/U0/DPTI_to_AXI_S_inst/pCountSentBytes_reg[0]/CLR, design_1_i/AXI_DPTI_0/U0/DPTI_to_AXI_S_inst/pCountSentBytes_reg[1]/CLR, design_1_i/AXI_DPTI_0/U0/DPTI_to_AXI_S_inst/pLengthRxCnt_reg[0]/CLR, design_1_i/AXI_DPTI_0/U0/DPTI_to_AXI_S_inst/pLengthRxCnt_reg[10]/CLR, design_1_i/AXI_DPTI_0/U0/DPTI_to_AXI_S_inst/pLengthRxCnt_reg[11]/CLR, design_1_i/AXI_DPTI_0/U0/DPTI_to_AXI_S_inst/pLengthRxCnt_reg[12]/CLR, design_1_i/AXI_DPTI_0/U0/DPTI_to_AXI_S_inst/pLengthRxCnt_reg[13]/CLR, design_1_i/AXI_DPTI_0/U0/DPTI_to_AXI_S_inst/pLengthRxCnt_reg[14]/CLR, design_1_i/AXI_DPTI_0/U0/DPTI_to_AXI_S_inst/pLengthRxCnt_reg[15]/CLR, design_1_i/AXI_DPTI_0/U0/DPTI_to_AXI_S_inst/pLengthRxCnt_reg[16]/CLR, design_1_i/AXI_DPTI_0/U0/DPTI_to_AXI_S_inst/pLengthRxCnt_reg[17]/CLR, design_1_i/AXI_DPTI_0/U0/DPTI_to_AXI_S_inst/pLengthRxCnt_reg[18]/CLR, design_1_i/AXI_DPTI_0/U0/DPTI_to_AXI_S_inst/pLengthRxCnt_reg[19]/CLR (the first 15 of 61 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#10 Warning
+LUT drives async reset alert  
+LUT cell design_1_i/AXI_DPTI_0/U0/in_control_sync/count[0]__0_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_i/AXI_DPTI_0/U0/in_length_sync/SyncAsyncPushT/oSyncStages_reg[0]/CLR, design_1_i/AXI_DPTI_0/U0/in_length_sync/SyncAsyncPushT/oSyncStages_reg[1]/CLR, design_1_i/AXI_DPTI_0/U0/in_length_sync/SyncAsyncPushTBack/oSyncStages_reg[0]/CLR, design_1_i/AXI_DPTI_0/U0/in_length_sync/SyncAsyncPushTBack/oSyncStages_reg[1]/CLR, design_1_i/AXI_DPTI_0/U0/in_length_sync/SyncReset/SyncAsyncx/oSyncStages_reg[0]/PRE, design_1_i/AXI_DPTI_0/U0/in_length_sync/SyncReset/SyncAsyncx/oSyncStages_reg[1]/PRE, design_1_i/AXI_DPTI_0/U0/in_length_sync/iData_int_reg[0]/CLR, design_1_i/AXI_DPTI_0/U0/in_length_sync/iData_int_reg[10]/CLR, design_1_i/AXI_DPTI_0/U0/in_length_sync/iData_int_reg[11]/CLR, design_1_i/AXI_DPTI_0/U0/in_length_sync/iData_int_reg[12]/CLR, design_1_i/AXI_DPTI_0/U0/in_length_sync/iData_int_reg[13]/CLR, design_1_i/AXI_DPTI_0/U0/in_length_sync/iData_int_reg[14]/CLR, design_1_i/AXI_DPTI_0/U0/in_length_sync/iData_int_reg[15]/CLR, design_1_i/AXI_DPTI_0/U0/in_length_sync/iData_int_reg[16]/CLR, design_1_i/AXI_DPTI_0/U0/in_length_sync/iData_int_reg[17]/CLR (the first 15 of 76 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#11 Warning
+LUT drives async reset alert  
+LUT cell design_1_i/ZmodADC_0/AXI_ZmodADC1410_1/U0/AXI_ZmodADC1410_v1_0_S00_AXI_inst/aReset_inferred_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_i/ZmodADC_0/AXI_ZmodADC1410_1/U0/GenerateHanshake[0].InstSyncHandshake/SyncAsyncPushT/oSyncStages_reg[0]/CLR, design_1_i/ZmodADC_0/AXI_ZmodADC1410_1/U0/GenerateHanshake[0].InstSyncHandshake/SyncAsyncPushT/oSyncStages_reg[1]/CLR, design_1_i/ZmodADC_0/AXI_ZmodADC1410_1/U0/GenerateHanshake[0].InstSyncHandshake/SyncAsyncPushTBack/oSyncStages_reg[0]/CLR, design_1_i/ZmodADC_0/AXI_ZmodADC1410_1/U0/GenerateHanshake[0].InstSyncHandshake/SyncAsyncPushTBack/oSyncStages_reg[1]/CLR, design_1_i/ZmodADC_0/AXI_ZmodADC1410_1/U0/GenerateHanshake[0].InstSyncHandshake/SyncReset/SyncAsyncx/oSyncStages_reg[0]/PRE, design_1_i/ZmodADC_0/AXI_ZmodADC1410_1/U0/GenerateHanshake[0].InstSyncHandshake/SyncReset/SyncAsyncx/oSyncStages_reg[1]/PRE, design_1_i/ZmodADC_0/AXI_ZmodADC1410_1/U0/GenerateHanshake[0].InstSyncHandshake/iData_int_reg[1]/CLR, design_1_i/ZmodADC_0/AXI_ZmodADC1410_1/U0/GenerateHanshake[0].InstSyncHandshake/iData_int_reg[2]/CLR, design_1_i/ZmodADC_0/AXI_ZmodADC1410_1/U0/GenerateHanshake[0].InstSyncHandshake/iData_int_reg[4]/CLR, design_1_i/ZmodADC_0/AXI_ZmodADC1410_1/U0/GenerateHanshake[0].InstSyncHandshake/iData_int_reg[5]/CLR, design_1_i/ZmodADC_0/AXI_ZmodADC1410_1/U0/GenerateHanshake[0].InstSyncHandshake/iPushT_reg/CLR, design_1_i/ZmodADC_0/AXI_ZmodADC1410_1/U0/GenerateHanshake[0].InstSyncHandshake/iPush_q_reg/CLR, design_1_i/ZmodADC_0/AXI_ZmodADC1410_1/U0/GenerateHanshake[0].InstSyncHandshake/iRdy_reg/CLR, design_1_i/ZmodADC_0/AXI_ZmodADC1410_1/U0/GenerateHanshake[0].InstSyncHandshake/oData_reg[1]/CLR, design_1_i/ZmodADC_0/AXI_ZmodADC1410_1/U0/GenerateHanshake[0].InstSyncHandshake/oData_reg[2]/CLR (the first 15 of 594 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#12 Warning
+LUT drives async reset alert  
+LUT cell design_1_i/ZmodADC_0/AXI_ZmodADC1410_1/U0/AXI_ZmodADC1410_v1_0_S00_AXI_inst/aRst_int_inferred_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_i/ZmodADC_0/AXI_ZmodADC1410_1/U0/InstLaxiResetHandshake/SyncAsyncx/oSyncStages_reg[0]/CLR, design_1_i/ZmodADC_0/AXI_ZmodADC1410_1/U0/InstLaxiResetHandshake/SyncAsyncx/oSyncStages_reg[1]/CLR, design_1_i/ZmodADC_0/AXI_ZmodADC1410_1/U0/InstSaxiResetHandshake/SyncAsyncx/oSyncStages_reg[0]/CLR, design_1_i/ZmodADC_0/AXI_ZmodADC1410_1/U0/InstSaxiResetHandshake/SyncAsyncx/oSyncStages_reg[1]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#13 Warning
+LUT drives async reset alert  
+LUT cell design_1_i/ZmodADC_0/AXI_ZmodADC1410_1/U0/InstSaxiResetHandshake/SyncAsyncx/xsTvalidDisable_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_i/ZmodADC_0/AXI_ZmodADC1410_1/U0/Circular_Buffer_inst/InstBufEmptyHandShake/SyncAsyncPushT/oSyncStages_reg[0]/CLR, design_1_i/ZmodADC_0/AXI_ZmodADC1410_1/U0/Circular_Buffer_inst/InstBufEmptyHandShake/SyncAsyncPushT/oSyncStages_reg[1]/CLR, design_1_i/ZmodADC_0/AXI_ZmodADC1410_1/U0/Circular_Buffer_inst/InstBufEmptyHandShake/iData_int_reg[0]/CLR, design_1_i/ZmodADC_0/AXI_ZmodADC1410_1/U0/Circular_Buffer_inst/InstBufEmptyHandShake/iPushT_reg/CLR, design_1_i/ZmodADC_0/AXI_ZmodADC1410_1/U0/Circular_Buffer_inst/InstBufEmptyHandShake/iPush_q_reg/CLR, design_1_i/ZmodADC_0/AXI_ZmodADC1410_1/U0/Circular_Buffer_inst/InstBufEmptyHandShake/iRdy_reg/CLR, design_1_i/ZmodADC_0/AXI_ZmodADC1410_1/U0/Circular_Buffer_inst/InstBufEmptyHandShake/oData_reg[0]/CLR, design_1_i/ZmodADC_0/AXI_ZmodADC1410_1/U0/Circular_Buffer_inst/InstBufEmptyHandShake/oPushTBack_reg/CLR, design_1_i/ZmodADC_0/AXI_ZmodADC1410_1/U0/Circular_Buffer_inst/InstBufEmptyHandShake/oPushT_q_reg/CLR, design_1_i/ZmodADC_0/AXI_ZmodADC1410_1/U0/Circular_Buffer_inst/InstBufEmptyHandShake/oValid_reg/CLR, design_1_i/ZmodADC_0/AXI_ZmodADC1410_1/U0/Circular_Buffer_inst/InstBufEmptyHandShake/SyncReset/SyncAsyncx/oSyncStages_reg[0]/PRE, design_1_i/ZmodADC_0/AXI_ZmodADC1410_1/U0/Circular_Buffer_inst/InstBufEmptyHandShake/SyncReset/SyncAsyncx/oSyncStages_reg[1]/PRE, design_1_i/ZmodADC_0/AXI_ZmodADC1410_1/U0/Circular_Buffer_inst/InstBufEmptyHandShake/SyncAsyncPushTBack/oSyncStages_reg[0]/CLR, design_1_i/ZmodADC_0/AXI_ZmodADC1410_1/U0/Circular_Buffer_inst/InstBufEmptyHandShake/SyncAsyncPushTBack/oSyncStages_reg[1]/CLR, design_1_i/ZmodADC_0/AXI_ZmodADC1410_1/U0/Circular_Buffer_inst/InstBufFullHandShake/SyncAsyncPushT/oSyncStages_reg[0]/CLR (the first 15 of 104 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#14 Warning
+LUT drives async reset alert  
+LUT cell design_1_i/axi_mem_intercon/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_i/axi_mem_intercon/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst/arststages_ff_reg[0]/PRE, design_1_i/axi_mem_intercon/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst/arststages_ff_reg[1]/PRE, design_1_i/axi_mem_intercon/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/arststages_ff_reg[0]/PRE, design_1_i/axi_mem_intercon/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/arststages_ff_reg[1]/PRE, design_1_i/axi_mem_intercon/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst/arststages_ff_reg[0]/PRE, design_1_i/axi_mem_intercon/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst/arststages_ff_reg[1]/PRE, design_1_i/axi_mem_intercon/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/arststages_ff_reg[0]/PRE, design_1_i/axi_mem_intercon/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/arststages_ff_reg[1]/PRE, design_1_i/axi_mem_intercon/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst/arststages_ff_reg[0]/PRE, design_1_i/axi_mem_intercon/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst/arststages_ff_reg[1]/PRE, design_1_i/axi_mem_intercon/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/arststages_ff_reg[0]/PRE, design_1_i/axi_mem_intercon/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/arststages_ff_reg[1]/PRE, design_1_i/axi_mem_intercon/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst/arststages_ff_reg[0]/PRE, design_1_i/axi_mem_intercon/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst/arststages_ff_reg[1]/PRE, design_1_i/axi_mem_intercon/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/arststages_ff_reg[0]/PRE (the first 15 of 20 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#15 Warning
+LUT drives async reset alert  
+LUT cell design_1_i/mdm_1/U0/MDM_Core_I1/JTAG_CONTROL_I/sel_n_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_i/mdm_1/U0/MDM_Core_I1/JTAG_CONTROL_I/sel_n_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#16 Warning
+LUT drives async reset alert  
+LUT cell design_1_i/mdm_1/U0/Use_E2.BSCAN_I/Use_Serial_Unified_Completion.completion_status[15]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_i/mdm_1/U0/MDM_Core_I1/Use_BSCAN.Config_Reg_reg[0]/CLR, design_1_i/mdm_1/U0/MDM_Core_I1/Use_BSCAN.Config_Reg_reg[10]/CLR, design_1_i/mdm_1/U0/MDM_Core_I1/Use_BSCAN.Config_Reg_reg[26]/CLR, design_1_i/mdm_1/U0/MDM_Core_I1/Use_BSCAN.Config_Reg_reg[3]/CLR, design_1_i/mdm_1/U0/MDM_Core_I1/Use_BSCAN.Config_Reg_reg_c/CLR, design_1_i/mdm_1/U0/MDM_Core_I1/Use_BSCAN.Config_Reg_reg_c_0/CLR, design_1_i/mdm_1/U0/MDM_Core_I1/Use_BSCAN.Config_Reg_reg_c_1/CLR, design_1_i/mdm_1/U0/MDM_Core_I1/Use_BSCAN.Config_Reg_reg_c_10/CLR, design_1_i/mdm_1/U0/MDM_Core_I1/Use_BSCAN.Config_Reg_reg_c_11/CLR, design_1_i/mdm_1/U0/MDM_Core_I1/Use_BSCAN.Config_Reg_reg_c_12/CLR, design_1_i/mdm_1/U0/MDM_Core_I1/Use_BSCAN.Config_Reg_reg_c_2/CLR, design_1_i/mdm_1/U0/MDM_Core_I1/Use_BSCAN.Config_Reg_reg_c_3/CLR, design_1_i/mdm_1/U0/MDM_Core_I1/Use_BSCAN.Config_Reg_reg_c_4/CLR, design_1_i/mdm_1/U0/MDM_Core_I1/Use_BSCAN.Config_Reg_reg_c_5/CLR, design_1_i/mdm_1/U0/MDM_Core_I1/Use_BSCAN.Config_Reg_reg_c_6/CLR (the first 15 of 23 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#17 Warning
+LUT drives async reset alert  
+LUT cell design_1_i/mdm_1/U0/Use_E2.BSCAN_I/Use_Serial_Unified_Completion.completion_status[15]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_i/mdm_1/U0/MDM_Core_I1/Use_BSCAN.PORT_Selector_1_reg[0]/CLR, design_1_i/mdm_1/U0/MDM_Core_I1/Use_BSCAN.PORT_Selector_1_reg[1]/CLR, design_1_i/mdm_1/U0/MDM_Core_I1/Use_BSCAN.PORT_Selector_1_reg[2]/CLR, design_1_i/mdm_1/U0/MDM_Core_I1/Use_BSCAN.PORT_Selector_1_reg[3]/CLR, design_1_i/mdm_1/U0/MDM_Core_I1/Use_BSCAN.PORT_Selector_reg[0]/CLR, design_1_i/mdm_1/U0/MDM_Core_I1/Use_BSCAN.PORT_Selector_reg[1]/CLR, design_1_i/mdm_1/U0/MDM_Core_I1/Use_BSCAN.PORT_Selector_reg[2]/CLR, design_1_i/mdm_1/U0/MDM_Core_I1/Use_BSCAN.PORT_Selector_reg[3]/CLR, design_1_i/mdm_1/U0/MDM_Core_I1/Use_BSCAN.TDI_Shifter_reg[0]/CLR, design_1_i/mdm_1/U0/MDM_Core_I1/Use_BSCAN.TDI_Shifter_reg[1]/CLR, design_1_i/mdm_1/U0/MDM_Core_I1/Use_BSCAN.TDI_Shifter_reg[2]/CLR, design_1_i/mdm_1/U0/MDM_Core_I1/Use_BSCAN.TDI_Shifter_reg[3]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#18 Warning
+LUT drives async reset alert  
+LUT cell design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/u_iodelay_ctrl/rstdiv2_sync_r[11]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep/PRE, design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__0/PRE, design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__1/PRE, design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__10/PRE, design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__11/PRE, design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__12/PRE, design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__13/PRE, design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__14/PRE, design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__15/PRE, design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__16/PRE, design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__17/PRE, design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__18/PRE, design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__19/PRE, design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__2/PRE, design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__3/PRE (the first 15 of 33 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+PDRC-190#1 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[0] in site SLICE_X5Y29 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#2 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[1] in site SLICE_X2Y29 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#3 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[2] in site SLICE_X4Y29 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#4 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_reg[3] in site SLICE_X3Y30 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_1_reg[3] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#5 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[0] in site SLICE_X6Y27 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#6 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[1] in site SLICE_X7Y28 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#7 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_reg[2] in site SLICE_X6Y29 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#8 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[0] in site SLICE_X2Y22 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#9 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[1] in site SLICE_X4Y22 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[1] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#10 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_reg[2] in site SLICE_X5Y22 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_1_reg[2] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#11 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell design_1_i/ZmodADC_0/AXI_ZmodADC1410_1/U0/SPI_Adapter_inst/RECEIVE_FIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X10Y94 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell design_1_i/ZmodADC_0/AXI_ZmodADC1410_1/U0/SPI_Adapter_inst/RECEIVE_FIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#12 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell design_1_i/ZmodADC_0/AXI_ZmodADC1410_1/U0/SPI_Adapter_inst/TRANSMIT_FIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X39Y94 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell design_1_i/ZmodADC_0/AXI_ZmodADC1410_1/U0/SPI_Adapter_inst/TRANSMIT_FIFO/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#13 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[0] in site SLICE_X34Y128 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#14 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[10] in site SLICE_X32Y127 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[10] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#15 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[11] in site SLICE_X33Y127 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[11] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#16 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[1] in site SLICE_X31Y125 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[1] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#17 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[2] in site SLICE_X34Y126 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[2] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#18 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[3] in site SLICE_X33Y125 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[3] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#19 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[4] in site SLICE_X33Y129 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[4] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#20 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[5] in site SLICE_X32Y129 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[5] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#21 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[6] in site SLICE_X31Y127 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[6] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#22 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[7] in site SLICE_X30Y126 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[7] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#23 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[8] in site SLICE_X36Y126 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[8] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#24 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[9] in site SLICE_X30Y124 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[9] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on ZmodADC_0_sdio_sc_0 relative to clock(s) sys_clock
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on Zmod_IIC_scl_io relative to clock(s) sys_clock
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on Zmod_IIC_sda_io relative to clock(s) sys_clock
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on btn0 relative to clock(s) sys_clock
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on prog_spien relative to clock(s) prog_clko, sys_clock
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on usb_uart_rxd relative to clock(s) sys_clock
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An output delay is missing on DDR3_0_reset_n relative to clock(s) sys_clock
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An output delay is missing on ZmodADC_0_ADC_SYNC_0 relative to clock(s) ZmodADC_0_CLKIN_ADC_P_0
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An output delay is missing on ZmodADC_0_SC1_AC_H_0 relative to clock(s) sys_clock
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An output delay is missing on ZmodADC_0_SC1_AC_L_0 relative to clock(s) sys_clock
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An output delay is missing on ZmodADC_0_SC1_GAIN_H_0 relative to clock(s) sys_clock
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An output delay is missing on ZmodADC_0_SC1_GAIN_L_0 relative to clock(s) sys_clock
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An output delay is missing on ZmodADC_0_SC2_AC_H_0 relative to clock(s) sys_clock
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An output delay is missing on ZmodADC_0_SC2_AC_L_0 relative to clock(s) sys_clock
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An output delay is missing on ZmodADC_0_SC2_GAIN_H_0 relative to clock(s) sys_clock
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An output delay is missing on ZmodADC_0_SC2_GAIN_L_0 relative to clock(s) sys_clock
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An output delay is missing on ZmodADC_0_SC_COM_H_0 relative to clock(s) sys_clock
+Related violations: <none>
+
+TIMING-18#18 Warning
+Missing input or output delay  
+An output delay is missing on ZmodADC_0_SC_COM_L_0 relative to clock(s) sys_clock
+Related violations: <none>
+
+TIMING-18#19 Warning
+Missing input or output delay  
+An output delay is missing on ZmodADC_0_cs_sc1_0 relative to clock(s) sys_clock
+Related violations: <none>
+
+TIMING-18#20 Warning
+Missing input or output delay  
+An output delay is missing on ZmodADC_0_sclk_sc_0 relative to clock(s) sys_clock
+Related violations: <none>
+
+TIMING-18#21 Warning
+Missing input or output delay  
+An output delay is missing on usb_uart_txd relative to clock(s) sys_clock
+Related violations: <none>
+
+XDCB-5#1 Warning
+Runtime inefficient way to find pin objects  
+The option '-through : [get_pins -filter {NAME =~ *SyncAsync*/oSyncStages_reg[*]/D} -hier]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '86' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_AXI_DPTI_0_0/src/timing.xdc (Line: 17)
+Related violations: <none>
+
+XDCB-5#2 Warning
+Runtime inefficient way to find pin objects  
+The option '-through : [get_pins -filter {NAME =~ *in_*_sync/*/CLR} -hier]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '88' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_AXI_DPTI_0_0/src/timing.xdc (Line: 20)
+Related violations: <none>
+
+XDCB-5#3 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -include_replicated_objects -filter {NAME =~ *temp_mon_enabled.u_tempmon/device_temp_sync_r1_reg[*]/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '97' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/user_design/constraints/design_1_mig_7series_0_2.xdc (Line: 354)
+Related violations: <none>
+
+REQP-1959#1 Advisory
+connects_SERDES_RST_driver_not_FF  
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[1].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#2 Advisory
+connects_SERDES_RST_driver_not_FF  
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[2].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#3 Advisory
+connects_SERDES_RST_driver_not_FF  
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[3].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#4 Advisory
+connects_SERDES_RST_driver_not_FF  
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[4].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#5 Advisory
+connects_SERDES_RST_driver_not_FF  
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[5].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#6 Advisory
+connects_SERDES_RST_driver_not_FF  
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[6].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#7 Advisory
+connects_SERDES_RST_driver_not_FF  
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[7].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#8 Advisory
+connects_SERDES_RST_driver_not_FF  
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[8].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#9 Advisory
+connects_SERDES_RST_driver_not_FF  
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[1].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#10 Advisory
+connects_SERDES_RST_driver_not_FF  
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[2].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#11 Advisory
+connects_SERDES_RST_driver_not_FF  
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[3].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#12 Advisory
+connects_SERDES_RST_driver_not_FF  
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[4].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#13 Advisory
+connects_SERDES_RST_driver_not_FF  
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[5].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#14 Advisory
+connects_SERDES_RST_driver_not_FF  
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[6].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#15 Advisory
+connects_SERDES_RST_driver_not_FF  
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[7].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#16 Advisory
+connects_SERDES_RST_driver_not_FF  
+design_1_i/mig_7series_0/u_design_1_mig_7series_0_2_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[8].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+

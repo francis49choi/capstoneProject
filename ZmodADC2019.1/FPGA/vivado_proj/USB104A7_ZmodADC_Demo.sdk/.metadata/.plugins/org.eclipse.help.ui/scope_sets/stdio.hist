@@ -1,0 +1,4 @@
+#Tue Jan 11 15:59:27 EST 2022
+__DEFAULT__=false
+org.eclipse.help.ui.localSearch.master=true
+expression=stdio

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Jan 10 17:58:22 2022
+# Process ID: 17492
+# Current directory: C:/Users/Francis Choi/Desktop/Capstone/USB104A7-ZmodADC-v2019.1-1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/design_1_ilmb_bram_if_cntlr_0_synth_1
+# Command line: vivado.exe -log design_1_ilmb_bram_if_cntlr_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_ilmb_bram_if_cntlr_0.tcl
+# Log file: C:/Users/Francis Choi/Desktop/Capstone/USB104A7-ZmodADC-v2019.1-1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/design_1_ilmb_bram_if_cntlr_0_synth_1/design_1_ilmb_bram_if_cntlr_0.vds
+# Journal file: C:/Users/Francis Choi/Desktop/Capstone/USB104A7-ZmodADC-v2019.1-1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/design_1_ilmb_bram_if_cntlr_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_ilmb_bram_if_cntlr_0.tcl -notrace

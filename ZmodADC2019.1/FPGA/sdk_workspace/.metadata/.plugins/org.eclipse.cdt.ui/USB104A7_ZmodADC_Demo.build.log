@@ -1,0 +1,86 @@
+18:53:16 **** Build of configuration Debug for project USB104A7_ZmodADC_Demo ****
+make all 
+'Building file: ../src/ZmodADC1410/zmodadc1410.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ZmodADC1410/zmodadc1410.o" -I../../USB104A7_ZmodADC_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/ZmodADC1410/zmodadc1410.d" -MT"src/ZmodADC1410/zmodadc1410.o" -o "src/ZmodADC1410/zmodadc1410.o" "../src/ZmodADC1410/zmodadc1410.cpp"
+'Finished building: ../src/ZmodADC1410/zmodadc1410.cpp'
+' '
+'Building file: ../src/Zmod/linux/reg/reg.c'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Zmod/linux/reg/reg.o" -I../../USB104A7_ZmodADC_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Zmod/linux/reg/reg.d" -MT"src/Zmod/linux/reg/reg.o" -o "src/Zmod/linux/reg/reg.o" "../src/Zmod/linux/reg/reg.c"
+'Finished building: ../src/Zmod/linux/reg/reg.c'
+' '
+'Building file: ../src/Zmod/linux/flash/flash.c'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Zmod/linux/flash/flash.o" -I../../USB104A7_ZmodADC_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Zmod/linux/flash/flash.d" -MT"src/Zmod/linux/flash/flash.o" -o "src/Zmod/linux/flash/flash.o" "../src/Zmod/linux/flash/flash.c"
+'Finished building: ../src/Zmod/linux/flash/flash.c'
+' '
+'Building file: ../src/Zmod/linux/dma/dma.c'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Zmod/linux/dma/dma.o" -I../../USB104A7_ZmodADC_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Zmod/linux/dma/dma.d" -MT"src/Zmod/linux/dma/dma.o" -o "src/Zmod/linux/dma/dma.o" "../src/Zmod/linux/dma/dma.c"
+'Finished building: ../src/Zmod/linux/dma/dma.c'
+' '
+'Building file: ../src/Zmod/linux/dma/libaxidma.c'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Zmod/linux/dma/libaxidma.o" -I../../USB104A7_ZmodADC_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Zmod/linux/dma/libaxidma.d" -MT"src/Zmod/linux/dma/libaxidma.o" -o "src/Zmod/linux/dma/libaxidma.o" "../src/Zmod/linux/dma/libaxidma.c"
+'Finished building: ../src/Zmod/linux/dma/libaxidma.c'
+' '
+'Building file: ../src/Zmod/linux/utils.c'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Zmod/linux/utils.o" -I../../USB104A7_ZmodADC_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Zmod/linux/utils.d" -MT"src/Zmod/linux/utils.o" -o "src/Zmod/linux/utils.o" "../src/Zmod/linux/utils.c"
+'Finished building: ../src/Zmod/linux/utils.c'
+' '
+'Building file: ../src/Zmod/baremetal/reg/reg.c'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Zmod/baremetal/reg/reg.o" -I../../USB104A7_ZmodADC_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Zmod/baremetal/reg/reg.d" -MT"src/Zmod/baremetal/reg/reg.o" -o "src/Zmod/baremetal/reg/reg.o" "../src/Zmod/baremetal/reg/reg.c"
+'Finished building: ../src/Zmod/baremetal/reg/reg.c'
+' '
+'Building file: ../src/Zmod/baremetal/intc/intc.c'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Zmod/baremetal/intc/intc.o" -I../../USB104A7_ZmodADC_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Zmod/baremetal/intc/intc.d" -MT"src/Zmod/baremetal/intc/intc.o" -o "src/Zmod/baremetal/intc/intc.o" "../src/Zmod/baremetal/intc/intc.c"
+'Finished building: ../src/Zmod/baremetal/intc/intc.c'
+' '
+'Building file: ../src/Zmod/baremetal/flash/flash.c'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Zmod/baremetal/flash/flash.o" -I../../USB104A7_ZmodADC_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Zmod/baremetal/flash/flash.d" -MT"src/Zmod/baremetal/flash/flash.o" -o "src/Zmod/baremetal/flash/flash.o" "../src/Zmod/baremetal/flash/flash.c"
+'Finished building: ../src/Zmod/baremetal/flash/flash.c'
+' '
+'Building file: ../src/Zmod/baremetal/dma/dma.c'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Zmod/baremetal/dma/dma.o" -I../../USB104A7_ZmodADC_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Zmod/baremetal/dma/dma.d" -MT"src/Zmod/baremetal/dma/dma.o" -o "src/Zmod/baremetal/dma/dma.o" "../src/Zmod/baremetal/dma/dma.c"
+'Finished building: ../src/Zmod/baremetal/dma/dma.c'
+' '
+'Building file: ../src/Zmod/zmod.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Zmod/zmod.o" -I../../USB104A7_ZmodADC_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Zmod/zmod.d" -MT"src/Zmod/zmod.o" -o "src/Zmod/zmod.o" "../src/Zmod/zmod.cpp"
+'Finished building: ../src/Zmod/zmod.cpp'
+' '
+'Building file: ../src/DPTI/dpti.c'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/DPTI/dpti.o" -I../../USB104A7_ZmodADC_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/DPTI/dpti.d" -MT"src/DPTI/dpti.o" -o "src/DPTI/dpti.o" "../src/DPTI/dpti.c"
+'Finished building: ../src/DPTI/dpti.c'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../USB104A7_ZmodADC_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../USB104A7_ZmodADC_Demo_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: USB104A7_ZmodADC_Demo.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../USB104A7_ZmodADC_Demo_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "USB104A7_ZmodADC_Demo.elf"  ./src/ZmodADC1410/zmodadc1410.o  ./src/Zmod/linux/reg/reg.o  ./src/Zmod/linux/flash/flash.o  ./src/Zmod/linux/dma/dma.o ./src/Zmod/linux/dma/libaxidma.o  ./src/Zmod/linux/utils.o  ./src/Zmod/baremetal/reg/reg.o  ./src/Zmod/baremetal/intc/intc.o  ./src/Zmod/baremetal/flash/flash.o  ./src/Zmod/baremetal/dma/dma.o  ./src/Zmod/zmod.o  ./src/DPTI/dpti.o  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: USB104A7_ZmodADC_Demo.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size USB104A7_ZmodADC_Demo.elf  |tee "USB104A7_ZmodADC_Demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  93792	   1908	 527660	 623360	  98300	USB104A7_ZmodADC_Demo.elf
+'Finished building: USB104A7_ZmodADC_Demo.elf.size'
+' '
+
+18:53:20 Build Finished (took 4s.649ms)
+

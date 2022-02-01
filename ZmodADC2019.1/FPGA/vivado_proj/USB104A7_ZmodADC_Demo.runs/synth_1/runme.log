@@ -1,0 +1,856 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+WARNING: [Board 49-91] Board repository path 'C:/Users/Francis' does not exist, it will not be used to search board files.
+WARNING: [Board 49-91] Board repository path 'Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.board' does not exist, it will not be used to search board files.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.ipdefs/vivado-library_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.cache/ip 
+add_files: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 484.887 ; gain = 81.059
+Command: synth_design -top design_1_wrapper -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11184 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 919.652 ; gain = 176.715
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:36115]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (1#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:36115]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:522]
+INFO: [Synth 8-6157] synthesizing module 'design_1_AXI_DPTI_0_0' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_AXI_DPTI_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_AXI_DPTI_0_0' (2#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_AXI_DPTI_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ZmodADC_0_imp_R53BZI' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1_AXI_ZmodADC1410_1_0' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_AXI_ZmodADC1410_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_AXI_ZmodADC1410_1_0' (3#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_AXI_ZmodADC1410_1_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'AXI_ZmodADC1410_1' of module 'design_1_AXI_ZmodADC1410_1_0' has 57 connections declared, but only 56 given [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:354]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ZmodADC1410_Controll_1_0' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_ZmodADC1410_Controll_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ZmodADC1410_Controll_1_0' (4#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_ZmodADC1410_Controll_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_dma_0_0' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_axi_dma_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_dma_0_0' (5#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_axi_dma_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'axi_dma_ADC' of module 'design_1_axi_dma_0_0' has 43 connections declared, but only 41 given [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:461]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:503]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ila_0_0' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_ila_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ila_0_0' (6#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_ila_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_0_0' [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 16 - type: integer 
+	Parameter DIN_FROM bound to: 15 - type: integer 
+	Parameter DIN_TO bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (7#1) [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_0_0' (8#1) [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_1_0' [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_xlslice_1_0/synth/design_1_xlslice_1_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_1_0' (9#1) [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_xlslice_1_0/synth/design_1_xlslice_1_0.v:57]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ZmodADC1410_Controll_1'. This will prevent further optimization [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:411]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_0'. This will prevent further optimization [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:503]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'xlslice_0'. This will prevent further optimization [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:513]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'AXI_ZmodADC1410_1'. This will prevent further optimization [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:354]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'xlslice_1'. This will prevent further optimization [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:516]
+INFO: [Synth 8-6155] done synthesizing module 'ZmodADC_0_imp_R53BZI' (10#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_dma_0_1' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_axi_dma_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_dma_0_1' (11#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_axi_dma_0_1_stub.v:6]
+WARNING: [Synth 8-7023] instance 'axi_dma_dpti' of module 'design_1_axi_dma_0_1' has 64 connections declared, but only 61 given [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:1174]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_iic_0_0' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_axi_iic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_iic_0_0' (12#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_axi_iic_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'axi_iic_0' of module 'design_1_axi_iic_0_0' has 27 connections declared, but only 25 given [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:1236]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_0' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:1848]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1R706YB' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:4055]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_cc_0' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_auto_cc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_cc_0' (13#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_auto_cc_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'auto_cc' of module 'design_1_auto_cc_0' has 82 connections declared, but only 80 given [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:4378]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1R706YB' (14#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:4055]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_7HNO1D' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:5779]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_0' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_auto_us_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_0' (15#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_auto_us_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'auto_us' of module 'design_1_auto_us_0' has 72 connections declared, but only 70 given [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:6058]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_7HNO1D' (16#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:5779]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_1W60HW0' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:6131]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_1' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_auto_us_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_1' (17#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_auto_us_1_stub.v:6]
+WARNING: [Synth 8-7023] instance 'auto_us' of module 'design_1_auto_us_1' has 34 connections declared, but only 33 given [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:6266]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_1W60HW0' (18#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:6131]
+INFO: [Synth 8-6157] synthesizing module 's02_couplers_imp_8NCF02' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:6302]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_2' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_auto_us_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_2' (19#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_auto_us_2_stub.v:6]
+WARNING: [Synth 8-7023] instance 'auto_us' of module 'design_1_auto_us_2' has 34 connections declared, but only 33 given [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:6429]
+INFO: [Synth 8-6155] done synthesizing module 's02_couplers_imp_8NCF02' (20#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:6302]
+INFO: [Synth 8-6157] synthesizing module 's03_couplers_imp_1UQ1PUB' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:6465]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_3' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_auto_us_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_3' (21#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_auto_us_3_stub.v:6]
+WARNING: [Synth 8-7023] instance 'auto_us' of module 'design_1_auto_us_3' has 40 connections declared, but only 39 given [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:6616]
+INFO: [Synth 8-6155] done synthesizing module 's03_couplers_imp_1UQ1PUB' (22#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:6465]
+INFO: [Synth 8-6157] synthesizing module 's04_couplers_imp_4T8GAF' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:6658]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_4' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_auto_us_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_4' (23#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_auto_us_4_stub.v:6]
+WARNING: [Synth 8-7023] instance 'auto_us' of module 'design_1_auto_us_4' has 40 connections declared, but only 39 given [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:6809]
+INFO: [Synth 8-6155] done synthesizing module 's04_couplers_imp_4T8GAF' (24#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:6658]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (25#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_xbar_0_stub.v:6]
+WARNING: [Synth 8-689] width (3) of port connection 's_axi_arready' does not match port width (5) of module 'design_1_xbar_0' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:2917]
+WARNING: [Synth 8-689] width (192) of port connection 's_axi_rdata' does not match port width (320) of module 'design_1_xbar_0' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:2934]
+WARNING: [Synth 8-689] width (3) of port connection 's_axi_rlast' does not match port width (5) of module 'design_1_xbar_0' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:2935]
+WARNING: [Synth 8-689] width (6) of port connection 's_axi_rresp' does not match port width (10) of module 'design_1_xbar_0' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:2937]
+WARNING: [Synth 8-689] width (3) of port connection 's_axi_rvalid' does not match port width (5) of module 'design_1_xbar_0' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:2938]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'design_1_xbar_0' has 78 connections declared, but only 76 given [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:2867]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_0' (26#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:1848]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_uartlite_0_1' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_axi_uartlite_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_uartlite_0_1' (27#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_axi_uartlite_0_1_stub.v:6]
+WARNING: [Synth 8-7023] instance 'axi_uartlite_0' of module 'design_1_axi_uartlite_0_1' has 22 connections declared, but only 21 given [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:1407]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0' (28#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_mdm_1_0' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_mdm_1_0' (29#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_0' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_0' (30#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_microblaze_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'microblaze_0' of module 'design_1_microblaze_0_0' has 126 connections declared, but only 108 given [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:1448]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_axi_intc_0' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_microblaze_0_axi_intc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_axi_intc_0' (31#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_microblaze_0_axi_intc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_axi_periph_0' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:2946]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_8RVYHO' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:4461]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_8RVYHO' (32#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:4461]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1UTB3Y5' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:4593]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1UTB3Y5' (33#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:4593]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_7ANRHB' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:4739]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_7ANRHB' (34#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:4739]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_1W07O72' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:4871]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_1W07O72' (35#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:4871]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_5LX7BU' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:4996]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_5LX7BU' (36#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:4996]
+INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_1XR4ZAZ' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:5142]
+INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_1XR4ZAZ' (37#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:5142]
+INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_4YOIXL' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:5267]
+INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_4YOIXL' (38#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:5267]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1RZP34U' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:5633]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1RZP34U' (39#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:5633]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_1' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_xbar_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_1' (40#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_xbar_1_stub.v:6]
+WARNING: [Synth 8-689] width (15) of port connection 'm_axi_arprot' does not match port width (21) of module 'design_1_xbar_1' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:4016]
+WARNING: [Synth 8-689] width (15) of port connection 'm_axi_awprot' does not match port width (21) of module 'design_1_xbar_1' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:4020]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_axi_periph_0' (41#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:2946]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:5399]
+INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_bram_if_cntlr_0' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_bram_if_cntlr_0' (42#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_v10_0' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_dlmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_v10_0' (43#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_dlmb_v10_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'design_1_dlmb_v10_0' has 25 connections declared, but only 24 given [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:5545]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_bram_if_cntlr_0' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_bram_if_cntlr_0' (44#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_v10_0' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_ilmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_v10_0' (45#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_ilmb_v10_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'design_1_ilmb_v10_0' has 25 connections declared, but only 24 given [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:5591]
+INFO: [Synth 8-6157] synthesizing module 'design_1_lmb_bram_0' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_lmb_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_lmb_bram_0' (46#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_lmb_bram_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'design_1_lmb_bram_0' has 16 connections declared, but only 14 given [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:5616]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' (47#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:5399]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_xlconcat_0' [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/synth/design_1_microblaze_0_xlconcat_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat' [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 4 - type: integer 
+	Parameter NUM_PORTS bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_3_xlconcat' (48#1) [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_xlconcat_0' (49#1) [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/synth/design_1_microblaze_0_xlconcat_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'design_1_mig_7series_0_2' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_mig_7series_0_2_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_mig_7series_0_2' (50#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_mig_7series_0_2_stub.v:5]
+WARNING: [Synth 8-7023] instance 'mig_7series_0' of module 'design_1_mig_7series_0_2' has 62 connections declared, but only 56 given [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:1770]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_clk_wiz_0_100M_0' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_rst_clk_wiz_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_clk_wiz_0_100M_0' (51#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_rst_clk_wiz_0_100M_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'rst_clk_wiz_0_100M' of module 'design_1_rst_clk_wiz_0_100M_0' has 10 connections declared, but only 8 given [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:1827]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_clk_wiz_0_200M_1' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_rst_clk_wiz_0_200M_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_clk_wiz_0_200M_1' (52#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_rst_clk_wiz_0_200M_1_stub.v:6]
+WARNING: [Synth 8-7023] instance 'rst_mig_7series_0_ui_clk' of module 'design_1_rst_clk_wiz_0_200M_1' has 10 connections declared, but only 6 given [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:1836]
+INFO: [Synth 8-6157] synthesizing module 'design_1_util_vector_logic_0_0' [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_util_vector_logic_0_0' (53#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/.Xil/Vivado-21424-DESKTOP-DH2EH4H/realtime/design_1_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (54#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/synth/design_1.v:522]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (55#1) [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In4[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In5[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In6[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In7[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In8[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In9[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In10[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In11[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In12[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In13[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In14[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In15[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In16[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In17[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In18[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In19[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In20[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In21[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In22[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In23[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In24[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In25[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In26[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In27[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In28[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In29[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In30[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In31[0]
+WARNING: [Synth 8-3331] design s00_couplers_imp_1RZP34U has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1RZP34U has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_1RZP34U has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1RZP34U has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m06_couplers_imp_4YOIXL has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m06_couplers_imp_4YOIXL has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m06_couplers_imp_4YOIXL has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m06_couplers_imp_4YOIXL has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m03_couplers_imp_1W07O72 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m03_couplers_imp_1W07O72 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m03_couplers_imp_1W07O72 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m03_couplers_imp_1W07O72 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_7ANRHB has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_7ANRHB has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_7ANRHB has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_7ANRHB has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_8RVYHO has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_8RVYHO has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_8RVYHO has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_8RVYHO has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port M01_ACLK
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port M01_ARESETN
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port M02_ACLK
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port M02_ARESETN
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port M03_ACLK
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port M03_ARESETN
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port M04_ACLK
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port M04_ARESETN
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port M05_ACLK
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port M05_ARESETN
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port M06_ACLK
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port M06_ARESETN
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port S00_ARESETN
+WARNING: [Synth 8-3331] design s04_couplers_imp_4T8GAF has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s04_couplers_imp_4T8GAF has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s03_couplers_imp_1UQ1PUB has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s03_couplers_imp_1UQ1PUB has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s02_couplers_imp_8NCF02 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s02_couplers_imp_8NCF02 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s01_couplers_imp_1W60HW0 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s01_couplers_imp_1W60HW0 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_7HNO1D has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_7HNO1D has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_1R706YB has unconnected port S_AXI_araddr[31]
+WARNING: [Synth 8-3331] design m00_couplers_imp_1R706YB has unconnected port S_AXI_araddr[30]
+WARNING: [Synth 8-3331] design m00_couplers_imp_1R706YB has unconnected port S_AXI_araddr[29]
+WARNING: [Synth 8-3331] design m00_couplers_imp_1R706YB has unconnected port S_AXI_awaddr[31]
+WARNING: [Synth 8-3331] design m00_couplers_imp_1R706YB has unconnected port S_AXI_awaddr[30]
+WARNING: [Synth 8-3331] design m00_couplers_imp_1R706YB has unconnected port S_AXI_awaddr[29]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[1]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[0]
+WARNING: [Synth 8-3331] design ZmodADC_0_imp_R53BZI has unconnected port S00_AXI_araddr[31]
+WARNING: [Synth 8-3331] design ZmodADC_0_imp_R53BZI has unconnected port S00_AXI_araddr[30]
+WARNING: [Synth 8-3331] design ZmodADC_0_imp_R53BZI has unconnected port S00_AXI_araddr[29]
+WARNING: [Synth 8-3331] design ZmodADC_0_imp_R53BZI has unconnected port S00_AXI_araddr[28]
+WARNING: [Synth 8-3331] design ZmodADC_0_imp_R53BZI has unconnected port S00_AXI_araddr[27]
+WARNING: [Synth 8-3331] design ZmodADC_0_imp_R53BZI has unconnected port S00_AXI_araddr[26]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 994.426 ; gain = 251.488
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 994.426 ; gain = 251.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 994.426 ; gain = 251.488
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
+Finished Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
+Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0/design_1_microblaze_0_0_in_context.xdc] for cell 'design_1_i/microblaze_0'
+Finished Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0/design_1_microblaze_0_0_in_context.xdc] for cell 'design_1_i/microblaze_0'
+Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0/design_1_ilmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0/design_1_ilmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0/design_1_ilmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0/design_1_ilmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0/design_1_lmb_bram_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0/design_1_lmb_bram_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_intc'
+Finished Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_intc'
+Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0/design_1_mdm_1_0_in_context.xdc] for cell 'design_1_i/mdm_1'
+Finished Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0/design_1_mdm_1_0_in_context.xdc] for cell 'design_1_i/mdm_1'
+Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_0/design_1_rst_clk_wiz_0_100M_0/design_1_rst_clk_wiz_0_100M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_0_100M'
+Finished Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_0/design_1_rst_clk_wiz_0_100M_0/design_1_rst_clk_wiz_0_100M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_0_100M'
+Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/xbar'
+Finished Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/xbar'
+Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1/design_1_xbar_1_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1/design_1_xbar_1_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_AXI_ZmodADC1410_1_0/design_1_AXI_ZmodADC1410_1_0/design_1_AXI_ZmodADC1410_1_0_in_context.xdc] for cell 'design_1_i/ZmodADC_0/AXI_ZmodADC1410_1'
+Finished Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_AXI_ZmodADC1410_1_0/design_1_AXI_ZmodADC1410_1_0/design_1_AXI_ZmodADC1410_1_0_in_context.xdc] for cell 'design_1_i/ZmodADC_0/AXI_ZmodADC1410_1'
+Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_ZmodADC1410_Controll_1_0/design_1_ZmodADC1410_Controll_1_0/design_1_ZmodADC1410_Controll_1_0_in_context.xdc] for cell 'design_1_i/ZmodADC_0/ZmodADC1410_Controll_1'
+Finished Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_ZmodADC1410_Controll_1_0/design_1_ZmodADC1410_Controll_1_0/design_1_ZmodADC1410_Controll_1_0_in_context.xdc] for cell 'design_1_i/ZmodADC_0/ZmodADC1410_Controll_1'
+Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0/design_1_axi_dma_0_0_in_context.xdc] for cell 'design_1_i/ZmodADC_0/axi_dma_ADC'
+Finished Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0/design_1_axi_dma_0_0_in_context.xdc] for cell 'design_1_i/ZmodADC_0/axi_dma_ADC'
+Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_ila_0_0/design_1_ila_0_0/design_1_ila_0_0_in_context.xdc] for cell 'design_1_i/ZmodADC_0/ila_0'
+Finished Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_ila_0_0/design_1_ila_0_0/design_1_ila_0_0_in_context.xdc] for cell 'design_1_i/ZmodADC_0/ila_0'
+Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_AXI_DPTI_0_0/design_1_AXI_DPTI_0_0/design_1_AXI_DPTI_0_0_in_context.xdc] for cell 'design_1_i/AXI_DPTI_0'
+Finished Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_AXI_DPTI_0_0/design_1_AXI_DPTI_0_0/design_1_AXI_DPTI_0_0_in_context.xdc] for cell 'design_1_i/AXI_DPTI_0'
+Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_1/design_1_axi_uartlite_0_1/design_1_axi_uartlite_0_1_in_context.xdc] for cell 'design_1_i/axi_uartlite_0'
+Finished Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_1/design_1_axi_uartlite_0_1/design_1_axi_uartlite_0_1_in_context.xdc] for cell 'design_1_i/axi_uartlite_0'
+Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_1/design_1_axi_dma_0_1/design_1_axi_dma_0_1_in_context.xdc] for cell 'design_1_i/axi_dma_dpti'
+Finished Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_1/design_1_axi_dma_0_1/design_1_axi_dma_0_1_in_context.xdc] for cell 'design_1_i/axi_dma_dpti'
+Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0/design_1_axi_iic_0_0_in_context.xdc] for cell 'design_1_i/axi_iic_0'
+Finished Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_axi_iic_0_0/design_1_axi_iic_0_0/design_1_axi_iic_0_0_in_context.xdc] for cell 'design_1_i/axi_iic_0'
+Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc] for cell 'design_1_i/mig_7series_0'
+Finished Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc] for cell 'design_1_i/mig_7series_0'
+Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_200M_1/design_1_rst_clk_wiz_0_200M_1/design_1_rst_clk_wiz_0_100M_0_in_context.xdc] for cell 'design_1_i/rst_mig_7series_0_ui_clk'
+Finished Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_200M_1/design_1_rst_clk_wiz_0_200M_1/design_1_rst_clk_wiz_0_100M_0_in_context.xdc] for cell 'design_1_i/rst_mig_7series_0_ui_clk'
+Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0_in_context.xdc] for cell 'design_1_i/util_vector_logic_0'
+Finished Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0_in_context.xdc] for cell 'design_1_i/util_vector_logic_0'
+Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0/design_1_auto_us_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s00_couplers/auto_us'
+Finished Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0/design_1_auto_us_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s00_couplers/auto_us'
+Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1/design_1_auto_us_1_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s01_couplers/auto_us'
+Finished Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1/design_1_auto_us_1_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s01_couplers/auto_us'
+Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_auto_us_2/design_1_auto_us_2/design_1_auto_us_1_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s02_couplers/auto_us'
+Finished Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_auto_us_2/design_1_auto_us_2/design_1_auto_us_1_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s02_couplers/auto_us'
+Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_auto_us_3/design_1_auto_us_3/design_1_auto_us_3_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s03_couplers/auto_us'
+Finished Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_auto_us_3/design_1_auto_us_3/design_1_auto_us_3_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s03_couplers/auto_us'
+Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_auto_us_4/design_1_auto_us_4/design_1_auto_us_3_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s04_couplers/auto_us'
+Finished Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_auto_us_4/design_1_auto_us_4/design_1_auto_us_3_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s04_couplers/auto_us'
+Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0/design_1_auto_cc_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/m00_couplers/auto_cc'
+Finished Parsing XDC File [c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0/design_1_auto_cc_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/m00_couplers/auto_cc'
+Parsing XDC File [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/constrs_1/new/USB104A7_A.xdc]
+Finished Parsing XDC File [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/constrs_1/new/USB104A7_A.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/constrs_1/new/USB104A7_A.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/constrs_1/imports/temp/ZmodADC_0_ZmodADC.xdc]
+WARNING: [Vivado 12-508] No pins matched 'design_1_i/ZmodADC_0/ZmodADC1410_Controll_1/U0/InstADC_ClkODDR/C'. [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/constrs_1/imports/temp/ZmodADC_0_ZmodADC.xdc:85]
+Finished Parsing XDC File [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/constrs_1/imports/temp/ZmodADC_0_ZmodADC.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/constrs_1/imports/temp/ZmodADC_0_ZmodADC.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/design_1_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/constrs_1/imports/temp/ZmodADC_0_ZmodADC.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1103.426 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1103.426 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1105.711 ; gain = 362.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1105.711 ; gain = 362.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc}, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc}, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for ZmodADC_0_CLKIN_ADC_N_0. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_ZmodADC1410_Controll_1_0/design_1_ZmodADC1410_Controll_1_0/design_1_ZmodADC1410_Controll_1_0_in_context.xdc}, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ZmodADC_0_CLKIN_ADC_N_0. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_ZmodADC1410_Controll_1_0/design_1_ZmodADC1410_Controll_1_0/design_1_ZmodADC1410_Controll_1_0_in_context.xdc}, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ZmodADC_0_CLKIN_ADC_P_0. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_ZmodADC1410_Controll_1_0/design_1_ZmodADC1410_Controll_1_0/design_1_ZmodADC1410_Controll_1_0_in_context.xdc}, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ZmodADC_0_CLKIN_ADC_P_0. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_ZmodADC1410_Controll_1_0/design_1_ZmodADC1410_Controll_1_0/design_1_ZmodADC1410_Controll_1_0_in_context.xdc}, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ZmodADC_0_sdio_sc_0. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_ZmodADC1410_Controll_1_0/design_1_ZmodADC1410_Controll_1_0/design_1_ZmodADC1410_Controll_1_0_in_context.xdc}, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ZmodADC_0_sdio_sc_0. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_ZmodADC1410_Controll_1_0/design_1_ZmodADC1410_Controll_1_0/design_1_ZmodADC1410_Controll_1_0_in_context.xdc}, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for prog_d[0]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_AXI_DPTI_0_0/design_1_AXI_DPTI_0_0/design_1_AXI_DPTI_0_0_in_context.xdc}, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for prog_d[0]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_AXI_DPTI_0_0/design_1_AXI_DPTI_0_0/design_1_AXI_DPTI_0_0_in_context.xdc}, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for prog_d[1]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_AXI_DPTI_0_0/design_1_AXI_DPTI_0_0/design_1_AXI_DPTI_0_0_in_context.xdc}, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for prog_d[1]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_AXI_DPTI_0_0/design_1_AXI_DPTI_0_0/design_1_AXI_DPTI_0_0_in_context.xdc}, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for prog_d[2]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_AXI_DPTI_0_0/design_1_AXI_DPTI_0_0/design_1_AXI_DPTI_0_0_in_context.xdc}, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for prog_d[2]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_AXI_DPTI_0_0/design_1_AXI_DPTI_0_0/design_1_AXI_DPTI_0_0_in_context.xdc}, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for prog_d[3]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_AXI_DPTI_0_0/design_1_AXI_DPTI_0_0/design_1_AXI_DPTI_0_0_in_context.xdc}, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for prog_d[3]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_AXI_DPTI_0_0/design_1_AXI_DPTI_0_0/design_1_AXI_DPTI_0_0_in_context.xdc}, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for prog_d[4]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_AXI_DPTI_0_0/design_1_AXI_DPTI_0_0/design_1_AXI_DPTI_0_0_in_context.xdc}, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for prog_d[4]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_AXI_DPTI_0_0/design_1_AXI_DPTI_0_0/design_1_AXI_DPTI_0_0_in_context.xdc}, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for prog_d[5]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_AXI_DPTI_0_0/design_1_AXI_DPTI_0_0/design_1_AXI_DPTI_0_0_in_context.xdc}, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for prog_d[5]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_AXI_DPTI_0_0/design_1_AXI_DPTI_0_0/design_1_AXI_DPTI_0_0_in_context.xdc}, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for prog_d[6]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_AXI_DPTI_0_0/design_1_AXI_DPTI_0_0/design_1_AXI_DPTI_0_0_in_context.xdc}, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for prog_d[6]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_AXI_DPTI_0_0/design_1_AXI_DPTI_0_0/design_1_AXI_DPTI_0_0_in_context.xdc}, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for prog_d[7]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_AXI_DPTI_0_0/design_1_AXI_DPTI_0_0/design_1_AXI_DPTI_0_0_in_context.xdc}, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for prog_d[7]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_AXI_DPTI_0_0/design_1_AXI_DPTI_0_0/design_1_AXI_DPTI_0_0_in_context.xdc}, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_addr[0]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_addr[0]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_addr[10]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_addr[10]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_addr[11]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_addr[11]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_addr[12]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_addr[12]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_addr[13]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_addr[13]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_addr[14]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_addr[14]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_addr[1]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_addr[1]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_addr[2]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_addr[2]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_addr[3]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 18).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_addr[3]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 19).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_addr[4]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 20).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_addr[4]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 21).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_addr[5]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 22).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_addr[5]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 23).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_addr[6]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 24).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_addr[6]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 25).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_addr[7]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 26).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_addr[7]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 27).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_addr[8]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 28).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_addr[8]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 29).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_addr[9]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 30).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_addr[9]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 31).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_ba[0]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 32).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_ba[0]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 33).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_ba[1]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 34).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_ba[1]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 35).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_ba[2]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 36).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_ba[2]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 37).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_cas_n. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 38).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_cas_n. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 39).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_ck_n[0]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 40).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_ck_n[0]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 41).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_ck_p[0]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 42).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_ck_p[0]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 43).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_cke[0]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 44).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_cke[0]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 45).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_dm[0]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 46).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_dm[0]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 47).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_dm[1]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 48).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_dm[1]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 49).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_dq[0]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 50).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_dq[0]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 51).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_dq[10]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 52).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_dq[10]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 53).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_dq[11]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 54).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_dq[11]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 55).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_dq[12]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 56).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_dq[12]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 57).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_dq[13]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 58).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_dq[13]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 59).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_dq[14]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 60).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_dq[14]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 61).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_dq[15]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 62).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_dq[15]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 63).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_dq[1]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 64).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_dq[1]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 65).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_dq[2]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 66).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_dq[2]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 67).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_dq[3]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 68).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_dq[3]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 69).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_dq[4]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 70).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_dq[4]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 71).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_dq[5]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 72).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_dq[5]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 73).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_dq[6]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 74).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_dq[6]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 75).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_dq[7]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 76).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_dq[7]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 77).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_dq[8]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 78).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_dq[8]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 79).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_dq[9]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 80).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_dq[9]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 81).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_dqs_n[0]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 82).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_dqs_n[0]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 83).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_dqs_n[1]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 84).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_dqs_n[1]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 85).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_dqs_p[0]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 86).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_dqs_p[0]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 87).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_dqs_p[1]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 88).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_dqs_p[1]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 89).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_odt[0]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 90).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_odt[0]. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 91).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_ras_n. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 92).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_ras_n. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 93).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_reset_n. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 94).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_reset_n. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 95).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR3_0_we_n. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 96).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR3_0_we_n. (constraint file  {c:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_2/design_1_mig_7series_0_2/design_1_mig_7series_0_2_in_context.xdc}, line 97).
+Applied set_property DONT_TOUCH = true for design_1_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/clk_wiz_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_axi_periph. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_axi_intc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_xlconcat. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/mdm_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/rst_clk_wiz_0_100M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_mem_intercon/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_mem_intercon. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/ZmodADC_0/AXI_ZmodADC1410_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/ZmodADC_0/ZmodADC1410_Controll_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/ZmodADC_0/axi_dma_ADC. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/ZmodADC_0/ila_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/ZmodADC_0/xlslice_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/ZmodADC_0/xlslice_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/AXI_DPTI_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_uartlite_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_dma_dpti. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_iic_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/mig_7series_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/rst_mig_7series_0_ui_clk. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/util_vector_logic_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_mem_intercon/s00_couplers/auto_us. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_mem_intercon/s01_couplers/auto_us. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_mem_intercon/s02_couplers/auto_us. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_mem_intercon/s03_couplers/auto_us. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_mem_intercon/s04_couplers/auto_us. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_mem_intercon/m00_couplers/auto_cc. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1105.711 ; gain = 362.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1105.711 ; gain = 362.773
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1105.711 ; gain = 362.773
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/clk_wiz_0/clk_out1' to pin 'design_1_i/clk_wiz_0/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/clk_wiz_0/clk_out2' to pin 'design_1_i/clk_wiz_0/bbstub_clk_out2/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/clk_wiz_0/clk_out3' to pin 'design_1_i/clk_wiz_0/bbstub_clk_out3/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr/BRAM_Clk_A' to pin 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/BRAM_Clk_A' to pin 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mdm_1/Dbg_Clk_0' to pin 'design_1_i/mdm_1/bbstub_Dbg_Clk_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mdm_1/Dbg_Update_0' to pin 'design_1_i/mdm_1/bbstub_Dbg_Update_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mig_7series_0/ui_clk' to pin 'design_1_i/mig_7series_0/bbstub_ui_clk/O'
+INFO: [Synth 8-5819] Moved 8 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1105.711 ; gain = 362.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1105.711 ; gain = 362.773
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1105.711 ; gain = 362.773
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1105.711 ; gain = 362.773
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1105.711 ; gain = 362.773
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1105.711 ; gain = 362.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1105.711 ; gain = 362.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1105.711 ; gain = 362.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1105.711 ; gain = 362.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------------------+----------+
+|      |BlackBox name                     |Instances |
++------+----------------------------------+----------+
+|1     |design_1_xbar_0                   |         1|
+|2     |design_1_auto_cc_0                |         1|
+|3     |design_1_auto_us_0                |         1|
+|4     |design_1_auto_us_1                |         1|
+|5     |design_1_auto_us_2                |         1|
+|6     |design_1_auto_us_3                |         1|
+|7     |design_1_auto_us_4                |         1|
+|8     |design_1_xbar_1                   |         1|
+|9     |design_1_AXI_DPTI_0_0             |         1|
+|10    |design_1_axi_dma_0_1              |         1|
+|11    |design_1_axi_iic_0_0              |         1|
+|12    |design_1_axi_uartlite_0_1         |         1|
+|13    |design_1_clk_wiz_0_0              |         1|
+|14    |design_1_mdm_1_0                  |         1|
+|15    |design_1_microblaze_0_0           |         1|
+|16    |design_1_microblaze_0_axi_intc_0  |         1|
+|17    |design_1_mig_7series_0_2          |         1|
+|18    |design_1_rst_clk_wiz_0_100M_0     |         1|
+|19    |design_1_rst_clk_wiz_0_200M_1     |         1|
+|20    |design_1_util_vector_logic_0_0    |         1|
+|21    |design_1_AXI_ZmodADC1410_1_0      |         1|
+|22    |design_1_ZmodADC1410_Controll_1_0 |         1|
+|23    |design_1_axi_dma_0_0              |         1|
+|24    |design_1_ila_0_0                  |         1|
+|25    |design_1_dlmb_bram_if_cntlr_0     |         1|
+|26    |design_1_dlmb_v10_0               |         1|
+|27    |design_1_ilmb_bram_if_cntlr_0     |         1|
+|28    |design_1_ilmb_v10_0               |         1|
+|29    |design_1_lmb_bram_0               |         1|
++------+----------------------------------+----------+
+
+Report Cell Usage: 
++------+----------------------------------+------+
+|      |Cell                              |Count |
++------+----------------------------------+------+
+|1     |design_1_AXI_DPTI_0_0             |     1|
+|2     |design_1_AXI_ZmodADC1410_1_0      |     1|
+|3     |design_1_ZmodADC1410_Controll_1_0 |     1|
+|4     |design_1_auto_cc_0                |     1|
+|5     |design_1_auto_us_0                |     1|
+|6     |design_1_auto_us_1                |     1|
+|7     |design_1_auto_us_2                |     1|
+|8     |design_1_auto_us_3                |     1|
+|9     |design_1_auto_us_4                |     1|
+|10    |design_1_axi_dma_0_0              |     1|
+|11    |design_1_axi_dma_0_1              |     1|
+|12    |design_1_axi_iic_0_0              |     1|
+|13    |design_1_axi_uartlite_0_1         |     1|
+|14    |design_1_clk_wiz_0_0              |     1|
+|15    |design_1_dlmb_bram_if_cntlr_0     |     1|
+|16    |design_1_dlmb_v10_0               |     1|
+|17    |design_1_ila_0_0                  |     1|
+|18    |design_1_ilmb_bram_if_cntlr_0     |     1|
+|19    |design_1_ilmb_v10_0               |     1|
+|20    |design_1_lmb_bram_0               |     1|
+|21    |design_1_mdm_1_0                  |     1|
+|22    |design_1_microblaze_0_0           |     1|
+|23    |design_1_microblaze_0_axi_intc_0  |     1|
+|24    |design_1_mig_7series_0_2          |     1|
+|25    |design_1_rst_clk_wiz_0_100M_0     |     1|
+|26    |design_1_rst_clk_wiz_0_200M_1     |     1|
+|27    |design_1_util_vector_logic_0_0    |     1|
+|28    |design_1_xbar_0                   |     1|
+|29    |design_1_xbar_1                   |     1|
+|30    |IBUF                              |    21|
+|31    |IOBUF                             |     2|
+|32    |OBUF                              |    18|
++------+----------------------------------+------+
+
+Report Instance Areas: 
++------+------------------------------+--------------------------------------+------+
+|      |Instance                      |Module                                |Cells |
++------+------------------------------+--------------------------------------+------+
+|1     |top                           |                                      |  4662|
+|2     |  design_1_i                  |design_1                              |  4621|
+|3     |    axi_mem_intercon          |design_1_axi_mem_intercon_0           |  1612|
+|4     |      m00_couplers            |m00_couplers_imp_1R706YB              |   280|
+|5     |      s00_couplers            |s00_couplers_imp_7HNO1D               |   242|
+|6     |      s01_couplers            |s01_couplers_imp_1W60HW0              |   100|
+|7     |      s02_couplers            |s02_couplers_imp_8NCF02               |   100|
+|8     |      s03_couplers            |s03_couplers_imp_1UQ1PUB              |   142|
+|9     |      s04_couplers            |s04_couplers_imp_4T8GAF               |   142|
+|10    |    microblaze_0_axi_periph   |design_1_microblaze_0_axi_periph_0    |   818|
+|11    |    microblaze_0_xlconcat     |design_1_microblaze_0_xlconcat_0      |     0|
+|12    |    ZmodADC_0                 |ZmodADC_0_imp_R53BZI                  |   492|
+|13    |      xlslice_0               |design_1_xlslice_0_0                  |     0|
+|14    |      xlslice_1               |design_1_xlslice_1_0                  |     0|
+|15    |    microblaze_0_local_memory |microblaze_0_local_memory_imp_1K0VQXK |   496|
++------+------------------------------+--------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1105.711 ; gain = 362.773
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 20 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1105.711 ; gain = 251.488
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1105.711 ; gain = 362.773
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1133.332 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+143 Infos, 133 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1133.332 ; gain = 648.445
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1133.332 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Francis Choi/Desktop/Cap/ZmodADC2019.1/FPGA/vivado_proj/USB104A7_ZmodADC_Demo.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 10 18:36:30 2022...
