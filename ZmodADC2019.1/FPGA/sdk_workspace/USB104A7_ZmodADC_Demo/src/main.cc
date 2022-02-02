@@ -63,7 +63,7 @@ XStatus DemoInitialize(){
 }
 
 void setDefaults(){
-	size_t defaultLength=0x3FFF;
+	size_t defaultLength=0x3FFF; //CHANGE ssimbul
 	ZmodADC.setGain(0, 0);
 	ZmodADC.setGain(1, 0);
 	ZmodADC.setTransferLength(defaultLength);
