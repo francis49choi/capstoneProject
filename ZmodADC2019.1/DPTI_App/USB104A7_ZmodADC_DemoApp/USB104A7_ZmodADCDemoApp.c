@@ -545,8 +545,8 @@ void printUsage(){
 	printf("edge [rising, falling]\t\t-\tSet the trigger edge to rising or falling edge (Default rising).\n");
 	printf("window [sample number]\t\t-\tSet the window position at which to run the data acquisition\n");
 
-	printf("stop\t\t-\tStop the ZmodADC Acquisition\n");
-	printf("ch1/ch2\t\t-\tSelect ADC channel\n");
+	printf("stop\t\t-\tStop the ZmodADC Acquisition\n"); 
+	printf("ch1/ch2\t\t-\tSelect ADC channel\n"); 
 	printf("gain [low,high,0,1]\t-\tSet the gain low or high\n\n");
 	
 

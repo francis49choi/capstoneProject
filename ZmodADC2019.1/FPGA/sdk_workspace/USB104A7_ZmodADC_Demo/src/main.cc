@@ -63,7 +63,7 @@ XStatus DemoInitialize(){
 }
 
 void setDefaults(){
-	size_t defaultLength=0x3FFF; //CHANGE ssimbul
+	size_t defaultLength=0x1FFF; //CHANGE ssimbul
 	ZmodADC.setGain(0, 0);
 	ZmodADC.setGain(1, 0);
 	ZmodADC.setTransferLength(defaultLength);
@@ -80,7 +80,7 @@ void DemoRun(){
 	uint32_t channel=0;
 	uint32_t window = 0;
 	uint32_t triggerLevel=0;
-	size_t length = 0x3FFF;
+	size_t length = 0x1FFF;
 	bool armed=false;
 	bool gain=0;
 	bool coupling=0;
