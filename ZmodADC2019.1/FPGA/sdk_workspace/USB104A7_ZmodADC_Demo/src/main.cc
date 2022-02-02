@@ -64,7 +64,7 @@ XStatus DemoInitialize(){
 
 void setDefaults(){
 	size_t defaultLength=0x1FFF; //CHANGE ssimbul
-	ZmodADC.setGain(0, 0);
+	ZmodADC.setGain(0, 0); //Spencer Simbul 
 	ZmodADC.setGain(1, 0);
 	ZmodADC.setTransferLength(defaultLength);
 	ZmodADC.setTrigger(0, 1, 0, 0, 0);
